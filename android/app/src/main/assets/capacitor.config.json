@@ -1,0 +1,6 @@
+{
+	"appId": "oliveira.luan.videosapp",
+	"appName": "videosApp",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
