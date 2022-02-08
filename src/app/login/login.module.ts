@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { EncantoPageRoutingModule } from './encanto-routing.module';
+import { LoginPageRoutingModule } from './login-routing.module';
 
-import { EncantoPage } from './encanto.page';
+import { LoginPage } from './login.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    EncantoPageRoutingModule
+    LoginPageRoutingModule
   ],
-  declarations: [EncantoPage]
+  declarations: [LoginPage]
 })
-export class EncantoPageModule {}
+export class LoginPageModule {}
