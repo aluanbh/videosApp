@@ -1,3 +1,4 @@
+import { IFilme } from '../models/IFilme.model';
 import { Component } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 import { ToastController } from '@ionic/angular';
@@ -8,6 +9,27 @@ import { ToastController } from '@ionic/angular';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+
+  titulo = 'Vídeos App';
+
+  listaVideos: IFilme[] = [
+    {
+      nome: 'Homem-Aranha: Sem Volta Para Casa (2021)',
+      lancamento: '16/12/2021',
+      duracao: '2h 28m',
+      classificacao: 76,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/fVzXp3NwovUlLe7fvoRynCmBPNc.jpg',
+      generos: ['Ação', 'Aventura', 'Ficção científica']
+    },
+    {
+      nome: 'Encanto (2021)',
+      lancamento: '24/11/2021',
+      duracao: '1h 42m',
+      classificacao: 76,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg',
+      generos: ['Animação', 'Comédia', 'Família', 'Fantasia']
+    }
+  ];
 
   constructor(public alertController: AlertController,public toastController: ToastController) {}
 
